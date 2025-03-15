@@ -107,9 +107,9 @@ fun EditNumberField(value: String,
     )
 }
 
-private fun tipcalculator(BillAmount: Double, tipPercent: Double):String {
+private fun tipcalculator(BillAmount: Double, tipPercent: Double):Double{
     val tip = tipPercent/100 * BillAmount
-    return NumberFormat.getCurrencyInstance().format(tip)
+    return tip
 }
 
 
